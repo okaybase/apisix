@@ -181,7 +181,7 @@ local function load_full_data(self, dir_res, headers)
             data_valid, err = check_schema(self.item_schema, item.value)
             if not data_valid then
                 log.error("failed to check item data of [", self.key,
-                          "] err:", err, ", val: ", json.delay_encode(item.value))
+                          "] err:", err, ", val: ", json.encode(item.value))
             end
         end
 
@@ -229,7 +229,7 @@ local function load_full_data(self, dir_res, headers)
                 data_valid, err = check_schema(self.item_schema, item.value)
                 if not data_valid then
                     log.error("failed to check item data of [", self.key,
-                              "] err:", err, ", val: ", json.delay_encode(item.value))
+                              "] err:", err, ", val: ", json.encode(item.value))
                 end
             end
 
