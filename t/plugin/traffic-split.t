@@ -714,7 +714,7 @@ passed
 ["GET /", "GET /"]
 --- error_code eval
 [200, 200]
---- error_log eval
+--- error_log_like eval
 qr/dns resolver domain: www.apiseven.com to \d+.\d+.\d+.\d+/
 
 
