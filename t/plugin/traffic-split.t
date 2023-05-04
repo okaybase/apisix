@@ -715,7 +715,7 @@ passed
 --- error_code eval
 [200, 200]
 --- error_log_like eval
-qr/dns resolver domain: www.apiseven.com to \d+.\d+.\d+.\d+/
+qr/(dns resolver domain: www.apiseven.com to \d+.\d+.\d+.\d+){2}/
 
 
 
